@@ -24,7 +24,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/download-artifact@v4
+    - name: Download text file
+      uses: actions/download-artifact@v4
       with:
         # Name of the artifact to download.
         # If unspecified, all artifacts for the run are downloaded.

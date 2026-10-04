@@ -24,9 +24,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
     - uses: actions/download-artifact@v4
       with:
         # Name of the artifact to download.
@@ -35,5 +32,8 @@ jobs:
         name: hello-artifact
         path: ./artifacts
 
-    - name: display text
+    - name: Display content of the text file
       run: cat ./artifacts/hello.txt
+
+
+ 
